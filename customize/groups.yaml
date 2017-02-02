@@ -1,0 +1,25 @@
+group.all_automations:
+    friendly_name: Automations List
+    hidden: false
+    emulated_hue: false
+    icon: mdi:auto-fix
+
+group.all_devices:
+    friendly_name: Devices List
+    hidden: false
+    emulated_hue: false
+    icon: mdi:cellphone-android
+
+group.all_switches:
+    friendly_name: Switches List
+    hidden: false
+    emulated_hue: false
+    icon: mdi:toggle-switch
+
+group.all_lights:
+    friendly_name: Lights List
+    hidden: false
+    emulated_hue: false
+
+group.wunderground:
+    emulated_hue: false

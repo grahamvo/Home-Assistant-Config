@@ -1,0 +1,18 @@
+wunderground:
+    name: Wunderground
+    entities:
+        - sensor.pws_weather
+        - sensor.pws_station_id
+        - sensor.pws_temp_f
+        - sensor.pws_feelslike_string
+        - sensor.pws_heat_index_string
+        - sensor.pws_relative_humidity
+        - sensor.pws_dewpoint_string
+        - sensor.pws_wind_string
+        - sensor.pws_precip_today_string
+        - sensor.pws_pressure_in
+        - sensor.pws_visibility_mi
+        - sensor.pws_uv
+        - sensor.pws_solarradiation
+        - sensor.pws_alerts
+        - weblink.forecast

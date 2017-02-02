@@ -1,0 +1,13 @@
+alias: Turn on lights when I get home after dark
+trigger:
+    - platform: state
+      entity_id: group.all_devices
+      from: 'not_home'
+      to: 'home'
+      state: 'home'
+condition:
+    - condition: sun
+      after: sunset
+action:
+    service: homeassistant.turn_on
+    entity_id: light.living_room_main

@@ -1,0 +1,11 @@
+alias: Turn on lights when the sun sets
+trigger:
+    - platform: sun
+      event: sunset
+condition:
+    - condition: state
+      entity_id: group.all_devices
+      state: 'home'
+action:
+    service: homeassistant.turn_on
+    entity_id: light.living_room_main

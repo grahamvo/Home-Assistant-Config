@@ -1,0 +1,3 @@
+- platform: tplink
+  host: 192.168.0.100
+  name: desk_lamp

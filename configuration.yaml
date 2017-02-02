@@ -1,0 +1,53 @@
+homeassistant:
+  name: EVIL LAIR
+  latitude: !secret homeassistant_latitude
+  longitude: !secret homeassistant_longitude
+  elevation: !secret homeassistant_elevation
+  unit_system: imperial
+  time_zone: America/New_York
+  customize: !include_dir_merge_named customize
+
+frontend:
+
+http:
+  api_password: !secret http_api_password
+  ssl_certificate: !secret http_ssl_certificate
+  ssl_key: !secret http_ssl_key
+
+mqtt:
+    broker: !secret mqtt_broker
+    port: !secret mqtt_port
+    client_id: homeassistant
+    keepalive: 60
+    username: !secret mqtt_username
+    password: !secret mqtt_password
+
+updater:
+discovery:
+conversation:
+history:
+logbook:
+sun:
+
+tts:
+  platform: google
+
+ifttt:
+    key: !secret ifttt_key
+
+emulated_hue:
+  type: google_home
+  listen_port: 80
+  expose_by_default: true
+  exposed_domains:
+      - switch
+      - light
+      - group
+
+switch: !include_dir_merge_list switch
+light: !include_dir_merge_list lights
+automation: !include_dir_list automation
+device_tracker: !include_dir_merge_list device_tracker
+zone: !include_dir_list zones
+group: !include_dir_merge_named groups
+sensor: !include_dir_merge_list sensors

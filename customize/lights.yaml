@@ -1,0 +1,6 @@
+light.bedside:
+    emulated_hue: true
+
+light.living_room_main:
+    emulated_hue: true
+    friendly_name: Main Light

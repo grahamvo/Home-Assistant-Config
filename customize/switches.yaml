@@ -1,0 +1,4 @@
+switch.desk_lamp:
+  friendly_name: Desk Lamp
+  icon: mdi:lamp
+  emulated_hue: true

@@ -1,0 +1,17 @@
+- platform: wunderground
+  api_key: !secret weather_api_key
+  monitored_conditions:
+  - weather
+  - temp_f
+  - station_id
+  - feelslike_string
+  - heat_index_string
+  - dewpoint_string
+  - UV
+  - pressure_in
+  - wind_string
+  - relative_humidity
+  - visibility_mi
+  - precip_today_string
+  - solarradiation
+  - alerts
