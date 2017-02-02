@@ -19,3 +19,5 @@ nest.conf
 .uuid
 .DS_Store
 ._.DS_Store
+tts
+._*
